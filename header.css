@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Impact_Label_Reversed';
-  src: url('/fonts/Impact_Label_Reversed.ttf') format('truetype');
+  src: url('fonts/Impact_Label_Reversed.ttf') format('truetype');
 }
 
 /* header.css */
