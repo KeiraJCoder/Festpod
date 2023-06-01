@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="chatbox.css">  
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <title>Festpod - About</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+        <img src="images/logo2.png" alt="Festpod Logo" class="logo left-logo">
+    <h1>Festpod</h1>
+    <img src="images/logo2.png" alt="Festpod Logo" class="logo right-logo flipped">
+  </div>
+  <nav>
+    <ul>
+      <li class="main-nav-item"><a href="index.html">Home</a></li>
+      <li class="main-nav-item"><a href="about.html">About</a></li>
+      <li class="main-nav-item"><a href="episodes.html">Episodes</a></li>
+      <li class="main-nav-item"><a href="merch.html">Our Merch</a></li>     
+       <li class="main-nav-item"><a href="https://www.patreon.com/festpod" target="_blank">Support</a></li>
+      <li class="main-nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+      <br>
+      <br>
+      <nav>
+        <ul class="social-links">
+            <li><a href="https://open.spotify.com/show/6DRUXYw29pK4BMApXsILjm" target="_blank" title="Spotify"><img src="images/spotify.png" alt="Spotify"></a></li>
+          <li><a href="https://facebook.com/festpod" target="_blank" title="Facebook"><img src="images/facebook.webp" alt="Facebook"></a></li>
+          <li><a href="https://instagram.com/fest.pod" target="_blank" title="Instagram"><img src="images/instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/festpod" target="_blank" title="Twitter"><img src="images/twitter.png" alt="Twitter"></a></li>
+          <li><a href="https://youtube.com/channel/UCi1HWLkdCOXT3rQTvtteUZQ" target="_blank" title="YouTube"><img src="images/youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.etsy.com/uk/shop/Festpod" target="_blank" title="Etsy"><img src="images/etsy.png" alt="Etsy"></a></li><br><br>
+        </ul>
+      </nav>
+    </header>
+
+    
+<br>
+<br>
+<br> 
+
+<h2 class="h2">meet your hosts</h2>
+        <img class="team-image" src="images/team.png" alt="Team Image">
+
+
+    <section id="hosts">
+        <div class="host-container">
+            <div class="host">
+                <h2>eamon shortt</h2>
+                <img src="images/Eamon.jpeg" alt="Host 1">
+                <p class="description">Eamon believes festivals are more than just music events. They are his second home, a retreat from the chaos of the world. His love for festivals has shaped his life, from making lifelong friends to finding his soulmate. Join him as he shares the magic, the community, and the mental health benefits of the festival experience.</p>
+            </div>
+            <div class="host">
+                <h2>rich holmes</h2>
+                <img src="images/rich.jpeg" alt="Host 2">
+                <p class="description">Rich is an avid supporter of Wrexham AFC, embodying the spirit of the club. Beyond football, his infectious enthusiasm extends to the world of professional wrestling. As a co-presenter of Festpod, Rich brings his vibrant personality, witty banter, and extensive knowledge to create an engaging and entertaining podcast for football, wrestling, and festival fans alike.</p>
+            </div>
+            <div class="host">
+                <h2>neil wilkinson</h2>
+                <img src="images/neil.jpeg" alt="Host 3">
+                <p class="description">Neill is a passionate lover of TV and radio broadcasting. With a vast collection of nostalgic VHS tapes containing hours of 90s TV shows, he's on a mission to upload and enhance these recordings for the world to enjoy. His expertise extends to hosting podcasts and online streams, where he shares his love for the medium.</p>
+            </div>
+            
+            <div class="host">
+                <h2>leigh ellingham</h2>
+                <img src="images/leigh.jpeg" alt="Host 4">
+                <p class="description">Leigh is an enthusiastic rock and metal lover who found his passion for festivals through his love for music. Co-hosting Festpod with Neil, he aims to guide and connect festival-goers, whether they are first-timers or seasoned veterans. Join him to keep the excitement of festivals alive all year round.</p>
+            </div>
+        </div>
+    </section>
+<br>
+<br>
+<br>
+
+    <footer>
+        <p>© 2023 Festpod. All rights reserved.</p>
+    </footer>
+    <script src="about.js"></script>
+
+    <!-- -----------------CHATBOT------------------- -->
+
+<div id="chatbot">
+    <button id="minimize-button" onclick="toggleChatbot()">_</button>
+    <br>
+    <br>
+    <h2 class="h2-chat">FaQ</h2>
+    <p id="welcome-message">Hi! How can I assist you?</p>
+    
+    <!-- Options section -->
+    <div id="options">
+      <button onclick="getResponse('Festpod?')">Festpod?</button>
+      <button onclick="getResponse('Listen?')">Listen?</button>
+      <button onclick="getResponse('Support?')">Support?</button>
+      <button onclick="getResponse('Merch?')">Merch?</button>
+      <button onclick="getResponse('Contact?')">Contact?</button>
+      <button onclick="getResponse('Episodes?')">Episodes?</button>
+      <button onclick="getResponse('Social Media?')">Social Media?</button>
+      <button onclick="getResponse('About?')">About?</button>
+      <div id="other-question" style="display:none;"></div>
+      <button onclick="window.location.href='contact.html'">Other questions</button><!-- Redirects to contact page -->
+    </div>
+    
+    <!-- Response section -->
+    <div id="response" style="overflow: auto; max-height: 500px;">
+      <!-- New response div with auto-scrolling behavior -->
+    </div>
+    
+    <!-- Other question section -->
+    <div id="other-question" style="display: none;">
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input type="text" id="user-input" placeholder="Your question" autocomplete="off">
+          <button id="submit-button" onclick="sendQuestion()">Submit</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Confirmation message section -->
+    <div id="confirmation-message" style="display: none;">
+      <p>We aim to reply to all queries as soon as possible. Thank you for visiting FestPod!</p>
+    </div>
+  </div>
+  
+  <button id="open-chatbot" onclick="openChatbot()">FaQ</button>
+  <script src="chatbot.js" defer></script>
+  
+</body>
+</html>

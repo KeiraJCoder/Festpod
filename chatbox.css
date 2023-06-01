@@ -1,0 +1,194 @@
+/* ===================================================
+SECTION 1: Chatbot Styles
+=================================================== */
+
+/* Chatbot Styles */
+#chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px; /* Increase the width of the chatbot */
+  height: 400px; /* Adjust the height as per your preference */
+  overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  z-index: 1000;
+}
+
+#response {
+  overflow: auto;
+  white-space: pre-wrap;
+  margin: 0 auto;
+  text-align: center;
+  animation: typewriter 4s steps(30, end), blink-caret .75s step-end infinite;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid #000000;
+  padding: 8px;
+  color:black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  font-size: 0.8em; /* Shrink the response text */
+}
+
+
+  
+  .h2-chat {
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+    margin-top: 0;
+    font-size: 3vw;
+    background-color: black;
+    color: rgb(232, 223, 223);
+    text-shadow: red 1px 2px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #open-chatbot {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fc0101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #chatbox {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+  }
+  
+  #options {
+    margin-top: 10px;
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  }
+  
+  #response-container {
+    animation: typewriter 5s steps(20, end), blink-caret .75s step-end infinite;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    scroll-margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 5px;
+    transition: transform 0.3s ease-out;
+    font-family: 'Impact_Label_reversed', Arial, sans-serif;
+    font-size: 2vh;
+    color: white;
+    background-color: black;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  #options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  #options button {
+    margin: 5px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  #user-input {
+    display:flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin-left: 5px;
+  }
+
+  #welcome-message{
+    color:black;
+  }
+  
+  
+  /* ===================================================
+  SECTION 2: Media Queries
+  =================================================== */
+  
+  @media only screen and (max-width: 600px) {
+    #chatbot {
+      width: 90%; /* Adjust the width as per your preference */
+      height: 70vh; /* Adjust the height as per your preference */
+      max-height: 80vh;
+    }
+  
+    .h2-chat {
+      font-size: 5vw;
+    }
+  
+    #options {
+      flex-direction: column;
+    }
+  
+    #options button {
+      display: inline-flex;
+      justify-content: center;
+      width: auto;
+      margin: 10px 0;
+      font-size: 3vh;
+      color: rgb(255, 255, 255);
+    }
+
+    button {
+      margin-top: 5px;
+      transition: transform 0.3s ease-out;
+      font-family: 'Impact_Label_reversed', Arial, sans-serif;
+      font-size: 2vh;
+      color: white;
+      background-color: black;
+    }
+  
+    #response {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #options button {
+      font-size: 2vh;
+      padding: 5px;
+      color:white;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }

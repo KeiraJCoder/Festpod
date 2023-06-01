@@ -1,0 +1,123 @@
+/* ===================================================
+SECTION 1: Global Styles
+=================================================== */
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* ===================================================
+SECTION 2: Font Styles
+=================================================== */
+h2 {
+    font-family: 'DragonForce', Arial, sans-serif;
+    font-size: 6vw;
+    text-shadow: rgb(0, 0, 0) 6px 1px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+    font-family: 'DragonForce', Arial, sans-serif;
+    font-size: 4vw;
+    text-shadow: rgb(0, 0, 0) 6px 1px;
+    color: rgb(237, 0, 0);
+}
+
+/* ===================================================
+SECTION 3: Paragraph Styles
+=================================================== */
+.p2 {
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+    max-width: 70%; /* adjust this to your liking */
+    margin-left: auto;
+    margin-right: auto;
+    font-size:4vh;
+    text-shadow: red 2px 1px;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.792);
+}
+
+.p2 b{
+    text-shadow: black 1px 1px;
+    color:green;
+}
+
+.p2 a:hover{
+    color:rgb(255, 0, 0);
+    
+}
+
+.p2 a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+/* ===================================================
+SECTION 4: Video Player Styles
+=================================================== */
+video {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    border: 2vh double #fff;
+    border-radius: 30%;
+    border-bottom:30%;
+    margin-bottom:0;
+}
+
+#videoContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+#videoContainer:hover #playButton {
+    display: none;
+}
+
+#playButton.show {
+    display: block;
+}
+
+
+/* ===================================================
+SECTION 5: Container Styles
+=================================================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===================================================
+SECTION 6: Responsive Media Queries
+=================================================== */
+@media screen and (max-width: 768px) {
+    video {
+        width: 100%;
+    }
+    p {
+        max-width: 90%; /* you might want to allow a bit more width on small screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #videoPlayer {
+        width: 80%; /* Adjust as needed */
+        left: 10%; /* Half of the remaining 20% to center the video */
+    }
+}

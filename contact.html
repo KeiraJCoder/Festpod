@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/images/logo.jpg">
+    <link rel="stylesheet" href="chatbox.css">  
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Festpod - Contact Us</title>
+</head>
+<body>
+  <header>
+    <div class="title">
+    <img src="images/logo2.png" alt="Festpod Logo" class="logo left-logo">
+<h1>Festpod</h1>
+<img src="images/logo2.png" alt="Festpod Logo" class="logo right-logo flipped">
+</div>
+<nav>
+  <ul>
+    <li class="main-nav-item"><a href="index.html">Home</a></li>
+    <li class="main-nav-item"><a href="about.html">About</a></li>
+    <li class="main-nav-item"><a href="episodes.html">Episodes</a></li>
+    <li class="main-nav-item"><a href="merch.html">Our Merch</a></li>     
+     <li class="main-nav-item"><a href="https://www.patreon.com/festpod" target="_blank">Support</a></li>
+    <li class="main-nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+        <br>
+        <br>
+        <nav>
+      <ul class="social-links"><br><br>
+        <li><a href="https://open.spotify.com/show/6DRUXYw29pK4BMApXsILjm" target="_blank" title="Spotify"><img src="images/spotify.png" alt="Spotify"></a></li>
+        <li><a href="https://facebook.com/festpod" target="_blank" title="Facebook"><img src="images/facebook.webp" alt="Facebook"></a></li>
+        <li><a href="https://instagram.com/fest.pod" target="_blank" title="Instagram"><img src="images/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://twitter.com/festpod" target="_blank" title="Twitter"><img src="images/twitter.png" alt="Twitter"></a></li>
+        <li><a href="https://youtube.com/channel/UCi1HWLkdCOXT3rQTvtteUZQ" target="_blank" title="YouTube"><img src="images/youtube.png" alt="YouTube"></a></li>
+        <li><a href="https://www.etsy.com/uk/shop/Festpod" target="_blank" title="Etsy"><img src="images/etsy.png" alt="Etsy"></a></li><br><br>
+      </ul>
+    </nav>
+  </header>
+
+ 
+        <h2 class="h2">contact us</h2>
+    <section class="container">
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <footer>
+              <p>© 2023 Festpod Podcast. All rights reserved.</p>
+        </footer>
+        
+
+    <!-- -----------------CHATBOT------------------- -->
+
+<div id="chatbot">
+  <button id="minimize-button" onclick="toggleChatbot()">_</button>
+  <br>
+  <br>
+  <h2 class="h2-chat">FaQ</h2>
+  <p id="welcome-message">Hi! How can I assist you?</p>
+  
+  <!-- Options section -->
+  <div id="options">
+    <button onclick="getResponse('Festpod?')">Festpod?</button>
+    <button onclick="getResponse('Listen?')">Listen?</button>
+    <button onclick="getResponse('Support?')">Support?</button>
+    <button onclick="getResponse('Merch?')">Merch?</button>
+    <button onclick="getResponse('Contact?')">Contact?</button>
+    <button onclick="getResponse('Episodes?')">Episodes?</button>
+    <button onclick="getResponse('Social Media?')">Social Media?</button>
+    <button onclick="getResponse('About?')">About?</button>
+    <div id="other-question" style="display:none;"></div>
+    <button onclick="window.location.href='contact.html'">Other questions</button><!-- Redirects to contact page -->
+  </div>
+  
+  <!-- Response section -->
+  <div id="response" style="overflow: auto; max-height: 500px;">
+    <!-- New response div with auto-scrolling behavior -->
+  </div>
+  
+  <!-- Other question section -->
+  <div id="other-question" style="display: none;">
+    <div class="input-container">
+      <div class="input-wrapper">
+        <input type="text" id="user-input" placeholder="Your question" autocomplete="off">
+        <button id="submit-button" onclick="sendQuestion()">Submit</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Confirmation message section -->
+  <div id="confirmation-message" style="display: none;">
+    <p>We aim to reply to all queries as soon as possible. Thank you for visiting FestPod!</p>
+  </div>
+</div>
+
+<button id="open-chatbot" onclick="openChatbot()">FaQ</button>
+<script src="chatbot.js" defer></script>
+
+  </body>
+</html>

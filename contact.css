@@ -1,0 +1,311 @@
+/* ===================================================
+SECTION 1: Font Styles
+=================================================== */
+/* Importing different fonts used in the webpage */
+@font-face {
+  font-family: 'HeavyCopper3D';
+  src: url('fonts/HeavyCopper3D-K7Z77.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Iron Maiden';
+  src: url('fonts/iron-maiden.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DragonForce';
+  src: url('fonts/DragonForcE.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RockInline';
+  src: url('fonts/rockinline.regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Impact_Label';
+  src: url('fonts/Impact_Label.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CfPunkForeverRegular';
+  src: url('fonts/CfPunkForeverRegular-YJKv.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Impact_Label_Reversed';
+src: url('fonts/Impact_Label_Reversed.ttf') format('truetype');
+}
+
+/* Importing Google font */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+
+
+/* =========================================
+SECTION 2: Global Styles
+========================================= */
+body {
+display:flex;
+flex-direction: column;
+min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/music.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+.h2 {
+  font-family: 'CfPunkForeverRegular', Arial, sans-serif;
+  font-size: 5vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+  text-align: center; /* This will center the h2 text */
+}
+
+.h22 {
+  font-family: 'DragonForce', Arial, sans-serif;
+  font-size: 6vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+}
+
+
+p{
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  text-align: center;
+  font-size:2.5;
+  text-shadow:black 1px 1px;
+}
+
+
+/* ===================================================
+SECTION 3: Section Styles
+=================================================== */
+
+section {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Section headings */
+section h2 {
+font-size: 44px;
+margin: 0 0 20px;
+}
+
+/* Section paragraphs */
+section p {
+  margin: 0 0 10px;
+}
+
+
+/* ===================================================
+SECTION 4: Footer Styles
+=================================================== */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===================================================
+SECTION 5: Contact Form
+=================================================== */
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  text-shadow:black 2px 2px;
+  color:white;
+}
+
+#contact-form label {
+  font-size: 29px;
+  margin-top: 20px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+  font-size: 18px;
+  padding:auto 10px;
+  width: auto 100%;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+
+
+/* /* ===================================================
+SECTION 6: Media Queries
+=================================================== */
+
+/* For devices smaller than 768px */
+@media (max-width: 768px) {
+  .container,
+  footer {
+    padding: 10px;
+  }
+
+  h2,
+  .h2,
+  .h3 {
+    font-size: 4vw;
+  }
+
+  .host img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* For devices smaller than 600px */
+@media (max-width: 600px) {
+
+  h2,
+  .h2,
+  .h3,
+  .h22 {
+    font-size: 4vw;
+  }
+
+  #episodes li {
+    flex: 0 1 100%;
+  }
+
+  .h2 {
+    font-size: 2.5vw; /* Increase this value to adjust the size */
+  }
+
+}
+
+/* ===================================================
+SECTION 7: Contact Form Styles
+=================================================== */
+.contact-form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+.contact-form h2 {
+font-family: 'CfPunkForeverRegular', Arial, sans-serif;
+font-size: 3vw;
+text-shadow: rgb(0, 0, 0) 3px 4px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+font-family: 'Arial', sans-serif;
+font-size: 1em;
+}
+
+.contact-form button {
+font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+font-size: 1em;
+padding: 10px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+background-color: #555;
+}
+
+#contact-form label {
+font-size: 19px;
+}
+
+/* ===================================================
+SECTION 8: Media Queries
+=================================================== */
+
+/* For devices smaller than 768px */
+@media (max-width: 768px) {
+.contact-form {
+  width: 90%;
+}
+
+.contact-form h2 {
+  font-size: 4vw;
+}
+
+.social-links li a img {
+  height: 34px;
+  width: 34px;
+}
+
+footer p {
+  font-size: 12px; /* Adjust this value to match your design */
+}
+
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+form input, form textarea {
+  font-size: 0.8em; /* Adjust this value to make the font smaller on smaller devices */
+}
+}
+
+/* For devices smaller than 600px */
+@media (max-width: 600px) {
+.contact-form {
+  width: 95%;
+}
+
+.contact-form h2 {
+  font-size: 1vw;
+}
+
+
+footer p {
+  font-size: 10px; /* Adjust this value to match your design */
+}
+
+
+form input, form textarea {
+  font-size: 0.3em; /* Adjust this value to make the font even smaller on very small devices */
+}
+}
+

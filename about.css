@@ -1,0 +1,265 @@
+/* ===================================================
+SECTION 1: Font Styles
+=================================================== */
+/* Importing different fonts used in the webpage */
+@font-face {
+  font-family: 'HeavyCopper3D';
+  src: url('fonts/HeavyCopper3D-K7Z77.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Iron Maiden';
+  src: url('fonts/iron-maiden.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DragonForce';
+  src: url('fonts/DragonForcE.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RockInline';
+  src: url('fonts/rockinline.regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Impact_Label';
+  src: url('fonts/Impact_Label.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CfPunkForeverRegular';
+  src: url('fonts/CfPunkForeverRegular-YJKv.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Impact_Label_Reversed';
+src: url('fonts/Impact_Label_Reversed.ttf') format('truetype');
+}
+
+/* Importing Google font */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+
+/* ===================================================
+SECTION 2: Global Styles
+=================================================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/music.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+.h2 {
+  font-family: 'CfPunkForeverRegular', Arial, sans-serif;
+  font-size: 3vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.h22 {
+  font-family: 'DragonForce', Arial, sans-serif;
+  font-size: 6vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  text-align: center;
+  font-size: 2.5vh; /* Updated font size value */
+  text-shadow: black 1px 1px;
+}
+
+.team-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+
+/* ===================================================
+SECTION 3: Section Styles
+=================================================== */
+section {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 44px;
+  margin: 0 0 20px;
+}
+
+section p {
+  margin: 0 0 10px;
+}
+
+
+/* ===================================================
+SECTION 4: Hosts Styles
+=================================================== */
+#hosts {
+  text-align: center;
+}
+
+.host-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.host {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.host img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  border-style: groove;
+}
+
+.host h2 {
+  font-size: 32px;
+  color: white;
+  text-shadow: rgb(0, 0, 0) 2px 2px;
+  font-family: 'CfPunkForeverRegular', Arial, sans-serif;
+}
+
+.host:hover {
+  transform: scale(1.2);
+}
+
+.host:hover img {
+  transform: scale(1.2);
+}
+
+.host p.description {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  font-size: 2vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.host:hover p.description {
+  opacity: 1;
+}
+
+
+/* ===================================================
+SECTION 5: Footer Styles
+=================================================== */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===================================================
+SECTION 6: Media Queries
+=================================================== */
+
+/* For devices smaller than 768px */
+@media (max-width: 768px) {
+  .container,
+  header {
+      padding: 10px;
+  }
+
+  body {
+      background-attachment: scroll;
+  }
+
+  h1 {
+      font-size: 8vw;
+  }
+
+  h2,
+  .h2,
+  .h3 {
+      font-size: 4vw;
+  }
+
+  .host img {
+      width: 150px;
+      height: 150px;
+  }
+
+  footer {
+      font-size: 14px;
+  }
+}
+
+/* For devices smaller than 600px */
+@media (max-width: 600px) {
+
+  h2,
+  .h2,
+  .h3,
+  .h22 {
+      font-size: 2.5vw;
+  }
+
+  #episodes li {
+      flex: 0 1 100%;
+  }
+
+
+  .host img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .host h2 {
+      font-size: 3vh;
+      margin-top: 5px;
+  }
+
+  .host p.description {
+      font-size: 1vh;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+

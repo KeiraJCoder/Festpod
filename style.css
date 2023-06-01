@@ -1,0 +1,435 @@
+
+/* ===================================================
+SECTION 1: Font Styles
+=================================================== */
+/* Importing different fonts used in the webpage */
+/* Fonts */
+@font-face {
+  font-family: 'HeavyCopper3D';
+  src: url('fonts/HeavyCopper3D-K7Z77.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Iron Maiden';
+  src: url('fonts/iron-maiden.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DragonForce';
+  src: url('fonts/DragonForcE.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KnifeMetalGrunge';
+  src: url('fonts/KnifeMetalGrunge-0WnyG.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CfPunkForeverRegular';
+  src: url('fonts/CfPunkForeverRegular-YJKv.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CfAnarchyRegular';
+  src: url('fonts/CfAnarchyRegular-E8m8.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Impact_Label';
+  src: url('fonts/Impact_Label.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Impact_Label_Reversed';
+  src: url('fonts/Impact_Label_Reversed.ttf') format('truetype');
+}
+
+/* ===================================================
+SECTION 2: Global Styles
+=================================================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/music.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+body, html {
+  overflow-x: hidden !important;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+.h2 {
+  font-family: 'DragonForce', Arial, sans-serif;
+  font-size: 6vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+}
+
+.h22 {
+  font-family: 'DragonForce', Arial, sans-serif;
+  font-size: 6vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(255, 255, 255);
+}
+
+.h3{
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  font-size: 4vw;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
+  color: rgb(242, 0, 0);
+  margin:0;
+}
+
+/* ===================================================
+SECTION 3: Section Styles
+=================================================== */
+/* Section styles */
+section {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 44px;
+  margin: 0 0 20px;
+}
+
+#about {
+  background-color: #f5f5f5c1;
+}
+
+#about .h2 {
+  font-size: 7vw;
+}
+
+#about p {
+  margin: 0 0 3vh;
+  font-size: 1.9vh;
+}
+
+#about b {
+  font-weight: 500;
+  color: rgb(209, 23, 23);
+  text-shadow: black 1px 2px;
+}
+
+#support {
+  background-color: #f5f5f58e;
+  font-size: 3vh;
+}
+
+#support p{
+  font-size: 2.3vh;
+}
+
+#social-feed .social-heading {
+  font-size: 7vh;
+}
+
+
+/* ===================================================
+SECTION 4: Episode Styles
+=================================================== */
+#episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 20vh;
+}
+
+#episodes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#episodes .p2 {
+  display: inline;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  background-color: rgba(253, 253, 253, 0.793);
+  margin: 0;
+  padding: 6px;
+  border: #000000;
+  border-style: double;
+  border-width: 5px;
+  text-decoration: none;
+}
+
+#episodes a {
+  text-decoration: none;
+  color: black;
+}
+
+#episodes a:hover {
+  transition: background-color 0.3s ease;
+  color: red;
+}
+
+#episodes li {
+  padding: 20px;
+  border: 3px solid #000000;
+  border-style: double;
+  margin: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: rgba(245, 245, 245, 0.903);
+}
+
+#episodes h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 2vh;
+}
+
+#episodes p {
+  margin: 0;
+  padding: 6%;
+  text-align: center;
+  font-size: 2vh;
+}
+
+#episodes img {
+  padding: 6px;
+  margin: 2px;
+}
+
+/* ===================================================
+SECTION 5: Footer Styles
+=================================================== */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===================================================
+SECTION 6: Podcast Styles
+=================================================== */
+/* Podcast Links */
+#podcast-links {
+  text-align: center;
+
+}
+
+#podcast-links h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#podcast-links .podcast-links-container {
+  display: flex;
+  justify-content: center;
+  border:#ddd;
+  padding:12px;
+  border-style: double;
+ 
+}
+
+#podcast-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#podcast-links ul li {
+  margin-right: 10px;
+}
+
+#podcast-links ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#podcast-links ul li a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#podcast-links ul li a:hover img {
+  transform: scale(1.5);
+}
+
+/* ===================================================
+SECTION 7: Socials
+=================================================== */
+#social-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  color: white;
+  text-shadow: black 1px 2px;
+  font-family: 'DragonForce', Arial, sans-serif;
+  background-color:rgba(255, 255, 255, 0.371);
+}
+
+.twitter-feed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#social-feed .twitter-feed .twitter-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+#social-feed .twitter-feed .twitter-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+
+.social-wrapper {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.social-item {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  text-align: center;
+}
+
+#about{
+  background-color: rgba(221, 221, 221, 0.362)fff;
+  margin:0;
+
+}
+
+#social-feed img,
+#social-feed video,
+#social-feed .social-item {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ===================================================
+SECTION 8: Responsiveness
+=================================================== */
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  section {
+    padding: 10px 0;
+    
+  }
+  
+  .h3{
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+    font-size: 4vw;
+    text-shadow: rgb(0, 0, 0) 3px 4px;
+    color: rgb(242, 0, 0);
+    margin:0;
+  }
+
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  section p {
+    margin-bottom: 10px;
+  }
+
+  #about p {
+    margin-bottom: 2vh;
+    font-size: 1.5vh;
+  }
+
+  #podcast-links ul li {
+    margin-right: 5px;
+  }
+
+  #social-feed .social-item {
+    width: 100%;
+  }
+
+  #social-feed .social-item iframe {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  #support p {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    font-size: 1.6vh;
+  }
+
+  #support h2 {
+    font-size: 3vh;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .episodes p {
+    font-size: 3vh;
+  }
+
+  #podcast-links-container img {
+    width: 6vw;
+  }
+
+  /* Reset container styles for smaller screens */
+  .container {
+    width: auto;
+    padding: 10px;
+  }
+
+  /* Reset font size adjustments for smaller screens */
+  .h2,
+  .h22,
+  .h3 {
+    font-size: 4vw;
+  }
+  
+}
