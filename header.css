@@ -26,13 +26,13 @@
 
 @font-face {
   font-family: 'Impact_Label_Reversed';
-  src: url('fonts/Impact_Label_Reversed.ttf') format('truetype');
+  src: url('/fonts/Impact_Label_Reversed.ttf') format('truetype');
 }
 
 /* header.css */
 
 header {
-    background-image: url(images/banner\ \(1\).png);
+    background-image: url(images/banner.png);
     background-size: 100%;
     background-position: 2.8%;
     color: #fff;
