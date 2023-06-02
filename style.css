@@ -76,21 +76,21 @@ body, html {
 .h2 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 1px;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
   color: rgb(255, 255, 255);
 }
 
 .h22 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 1px;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
   color: rgb(255, 255, 255);
 }
 
 .h3{
   font-family: 'Impact_Label_Reversed', Arial, sans-serif;
   font-size: 4vw;
-  text-shadow: rgb(0, 0, 0) 3px 1px;
+  text-shadow: rgb(0, 0, 0) 3px 4px;
   color: rgb(242, 0, 0);
   margin:0;
 }
@@ -128,7 +128,7 @@ section h2 {
 #about b {
   font-weight: 500;
   color: rgb(209, 23, 23);
-  text-shadow: black 1px;
+  text-shadow: black 1px 2px;
 }
 
 #support {
@@ -242,21 +242,19 @@ SECTION 6: Podcast Styles
 /* Podcast Links */
 #podcast-links {
   text-align: center;
-
+  padding: 20px 0;
 }
 
 #podcast-links h2 {
-  font-size: 24px;
+  font-size: 4vw;
   margin-bottom: 20px;
 }
 
 #podcast-links .podcast-links-container {
   display: flex;
   justify-content: center;
-  border:#ddd;
-  padding:12px;
-  border-style: double;
- 
+  border: 2px solid #ddd;
+  padding: 12px;
 }
 
 #podcast-links ul {
@@ -288,68 +286,80 @@ SECTION 6: Podcast Styles
 
 /* ===================================================
 SECTION 7: Socials
-=================================================== */
-#social-feed {
+=================================================== */#social-feed {
   display: flex;
-  margin:0;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
   color: white;
   text-shadow: black 1px 2px;
   font-family: 'DragonForce', Arial, sans-serif;
-  background-color:rgba(255, 255, 255, 0.371);
+  background-color: rgba(255, 255, 255, 0.371);
 }
-
-.twitter-feed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-
-#social-feed .twitter-feed .twitter-item {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-#social-feed .twitter-feed .twitter-item:not(:last-child) {
-  border-bottom: 1px solid #ddd;
-}
-
 
 .social-wrapper {
   display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Add gap between the boxes */
 }
 
 .social-item {
   flex: 1 0 auto;
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black; /* Adjust the border width as needed */
+  border-radius: 5px; /* Add border radius for a rounded appearance */
+  background-color: #f5f5f5; /* Add background color for the individual box */
 }
 
-#about{
-  background-color: rgba(221, 221, 221, 0.362)fff;
-  margin:0;
-
+.social-item1,
+.social-item3 {
+  flex-basis: 33%; /* Adjust the width as needed */
 }
 
-#social-feed img,
-#social-feed video,
-#social-feed .social-item {
-  width: 100%;
-  object-fit: cover;
+.social-item2 {
+  flex-basis: 33%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.twitter-follow-container {
+  align-self: center; /* Align the follow button to the top */
+  margin-bottom: 10px; /* Add some bottom margin to separate from tweets */
+}
+
+.custom-height {
+  height: 522px; /* Adjust the height as needed */
+}
+
+.custom-height2 {
+  height: 522px; /* Adjust the height as needed */
+}
+
+.social-item.twitter-feed {
+  flex: 0 0 40%; /* Adjust the width as needed */
+}
+
+.social-item.embedsocial-hashtag {
+  flex: 0 0 30%; /* Adjust the width as needed */
+}
+
+.social-item.fb-page {
+  flex: 0 0 30%; /* Adjust the width as needed */
 }
 
 /* ===================================================
@@ -359,15 +369,13 @@ SECTION 8: Responsiveness
 @media (max-width: 768px) {
   section {
     padding: 10px 0;
-    
   }
-  
-  .h3{
-    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+
+  .h3 {
     font-size: 4vw;
     text-shadow: rgb(0, 0, 0) 3px 4px;
     color: rgb(242, 0, 0);
-    margin:0;
+    margin: 0;
   }
 
   section h2 {
@@ -388,8 +396,14 @@ SECTION 8: Responsiveness
     margin-right: 5px;
   }
 
-  #social-feed .social-item {
-    width: 100%;
+  #social-feed .social-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .social-item1,
+  .social-item2,
+  .social-item3 {
+    flex-basis: 100%;
   }
 
   #social-feed .social-item iframe {
@@ -398,9 +412,9 @@ SECTION 8: Responsiveness
   }
 
   #support p {
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-size: 1.6vh;
   }
 
@@ -432,5 +446,4 @@ SECTION 8: Responsiveness
   .h3 {
     font-size: 4vw;
   }
-  
 }
