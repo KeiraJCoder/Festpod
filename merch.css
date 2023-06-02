@@ -37,7 +37,7 @@ SECTION 3: Paragraph Styles
     margin-left: auto;
     margin-right: auto;
     font-size:4vh;
-    text-shadow: red 2px 1px;
+    text-shadow: red 2px;
     color: black;
     background-color:rgba(255, 255, 255, 0.792);
 }
