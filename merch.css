@@ -20,15 +20,17 @@ h2 {
 
 h3 {
     margin-top: 0;
-    font-family: 'DragonForce', Arial, sans-serif;
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
     font-size: 4vw;
-    text-shadow: rgb(0, 0, 0) 6px 1px;
+    text-shadow: rgb(0, 0, 0) 2px 1px;
     color: rgb(237, 0, 0);
 }
 
 /* ===================================================
 SECTION 3: Paragraph Styles
 =================================================== */
+
+
 .p2 {
     font-family: 'Impact_Label_Reversed', Arial, sans-serif;
     max-width: 70%; /* adjust this to your liking */
@@ -63,19 +65,22 @@ SECTION 4: Video Player Styles
 video {
     width: 80vw;
     height: auto;
+    display: block;
     margin: 0 auto;
     border: 2vh double #fff;
     border-radius: 30%;
-    border-bottom:30%;
-    margin-bottom:0;
-}
-
-#videoContainer {
-    position: relative;
+    border-bottom: 30%;
+    margin-bottom: 0;
+  }
+  
+  #videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-}
-
-#playButton {
+  }
+  
+  #playButton {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,15 +88,15 @@ video {
     width: 150px;
     height: 150px;
     z-index: 1;
-}
-
-#videoContainer:hover #playButton {
+  }
+  
+  #videoContainer:hover #playButton {
     display: none;
-}
-
-#playButton.show {
+  }
+  
+  #playButton.show {
     display: block;
-}
+  }
 
 
 /* ===================================================
@@ -103,8 +108,92 @@ SECTION 5: Container Styles
     align-items: center;
 }
 
+
 /* ===================================================
-SECTION 6: Responsive Media Queries
+SECTION 6: Carousel
+=================================================== */
+/* Carousel Styles */
+.owl-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+  }
+  
+  .owl-carousel .item img {
+    display: block;
+    margin: 0 auto; /* Center the images horizontally */
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    font-size: 32px; /* Increase the font size of the arrows */
+    color: #666666;
+    padding: 10px 15px; /* Increase the padding of the arrows */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev:hover,
+  .owl-carousel .owl-nav .owl-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .owl-carousel .owl-nav .owl-prev {
+    left: 10px; /* Adjust the distance from the left */
+  }
+  
+  .owl-carousel .owl-nav .owl-next {
+    right: 10px; /* Adjust the distance from the right */
+  }
+  
+  /* Container Styles */
+  #carousel {
+    margin: 0 auto;
+    max-width: 600px; /* Adjust the max-width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.421);
+  }
+  
+  /* Item Styles */
+  .owl-carousel .item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owl-carousel .item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .owl-carousel .item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .owl-carousel .item p {
+    font-size: 14px;
+    color: #666666;
+  }
+  
+/* ===================================================
+SECTION 7: Responsive Media Queries
 =================================================== */
 @media screen and (max-width: 768px) {
     video {
@@ -121,3 +210,39 @@ SECTION 6: Responsive Media Queries
         left: 10%; /* Half of the remaining 20% to center the video */
     }
 }
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+    .owl-carousel .item {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+    
+    .owl-carousel .item h2 {
+      font-size: 20px; /* Reduce font size for smaller screens */
+    }
+    
+    .owl-carousel .item h3 {
+      font-size: 16px; /* Reduce font size for smaller screens */
+    }
+    
+    .owl-carousel .item p {
+      font-size: 12px; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .owl-carousel .item img {
+      max-height: 150px; /* Reduce image height for smaller screens */
+    }
+    
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+      font-size: 24px; /* Reduce font size for smaller screens */
+      padding: 8px 12px; /* Reduce padding for smaller screens */
+    }
+    
+    #carousel {
+      max-width: 90%; /* Reduce max-width for smaller screens */
+    }
+  }
+  
