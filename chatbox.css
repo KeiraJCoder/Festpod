@@ -45,7 +45,7 @@ SECTION 1: Chatbot Styles
     font-size: 3vw;
     background-color: black;
     color: rgb(232, 223, 223);
-    text-shadow: red 1px 2px;
+    text-shadow: red 1px 1px;
     padding: 5px;
     display: flex;
     justify-content: center;

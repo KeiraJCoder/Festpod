@@ -48,7 +48,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(/images/music.jpg);
+  background-image: url(images/music.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ body {
 .h2 {
   font-family: 'CfPunkForeverRegular', Arial, sans-serif;
   font-size: 3vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -72,7 +72,7 @@ body {
 .h22 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
 }
 
@@ -80,7 +80,7 @@ p {
   font-family: 'Impact_Label_Reversed', Arial, sans-serif;
   text-align: center;
   font-size: 2.5vh; /* Updated font size value */
-  text-shadow: black 1px 1px;
+  text-shadow: black 2px 1px;
 }
 
 .team-image {
@@ -144,7 +144,7 @@ SECTION 4: Hosts Styles
 .host h2 {
   font-size: 32px;
   color: white;
-  text-shadow: rgb(0, 0, 0) 2px 2px;
+  text-shadow: rgb(0, 0, 0) 2px 1px;
   font-family: 'CfPunkForeverRegular', Arial, sans-serif;
 }
 

@@ -68,7 +68,7 @@ min-height: 100vh;
 .h2 {
   font-family: 'CfPunkForeverRegular', Arial, sans-serif;
   font-size: 5vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
   text-align: center; /* This will center the h2 text */
 }
@@ -76,7 +76,7 @@ min-height: 100vh;
 .h22 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
 }
 
@@ -138,7 +138,7 @@ SECTION 5: Contact Form
   flex-direction: column;
   max-width: 600px;
   margin: auto;
-  text-shadow:black 2px 2px;
+  text-shadow:black 2px 1px;
   color:white;
 }
 
@@ -224,7 +224,7 @@ font-family: 'Impact_Label_Reversed', Arial, sans-serif;
 .contact-form h2 {
 font-family: 'CfPunkForeverRegular', Arial, sans-serif;
 font-size: 3vw;
-text-shadow: rgb(0, 0, 0) 3px 4px;
+text-shadow: rgb(0, 0, 0) 3px 1px;
 color: rgb(255, 255, 255);
 text-align: center;
 }

@@ -76,21 +76,21 @@ body, html {
 .h2 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
 }
 
 .h22 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
 }
 
 .h3{
   font-family: 'Impact_Label_Reversed', Arial, sans-serif;
   font-size: 4vw;
-  text-shadow: rgb(0, 0, 0) 3px 4px;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(242, 0, 0);
   margin:0;
 }
@@ -128,7 +128,7 @@ section h2 {
 #about b {
   font-weight: 500;
   color: rgb(209, 23, 23);
-  text-shadow: black 1px 2px;
+  text-shadow: black 2px 1px;
 }
 
 #support {
@@ -293,7 +293,7 @@ SECTION 7: Socials
   flex-wrap: wrap;
   padding: 0;
   color: white;
-  text-shadow: black 1px 2px;
+  text-shadow: black 2px 1px;
   font-family: 'DragonForce', Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.371);
 }
@@ -373,7 +373,7 @@ SECTION 8: Responsiveness
 
   .h3 {
     font-size: 4vw;
-    text-shadow: rgb(0, 0, 0) 3px 4px;
+    text-shadow: rgb(0, 0, 0) 3px 1px;
     color: rgb(242, 0, 0);
     margin: 0;
   }
