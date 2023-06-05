@@ -10,7 +10,7 @@ SECTION 1: Chatbot Styles
   width: 300px; /* Increase the width of the chatbot */
   height: 400px; /* Adjust the height as per your preference */
   overflow: auto;
-  padding: 10px;
+  padding: 20px;
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -34,7 +34,7 @@ SECTION 1: Chatbot Styles
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: #f9f9f9;
-  font-size: 0.8em; /* Shrink the response text */
+  font-size: 1em; /* Shrink the response text */
 }
 
 
@@ -92,7 +92,7 @@ SECTION 1: Chatbot Styles
     margin-top: 5px;
     transition: transform 0.3s ease-out;
     font-family: 'Impact_Label_reversed', Arial, sans-serif;
-    font-size: 2vh;
+    font-size: 3vh;
     color: white;
     background-color: black;
   }

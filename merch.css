@@ -5,24 +5,28 @@ body {
     background-color: #000;
     color: #fff;
     text-align: center;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    width:100%;
 }
 
 /* ===================================================
 SECTION 2: Font Styles
 =================================================== */
-h2 {
+h2, h3 {
     font-family: 'DragonForce', Arial, sans-serif;
-    font-size: 6vw;
-    text-shadow: rgb(0, 0, 0) 6px 1px;
-    color: rgb(255, 0, 0);
     margin-bottom: 0;
+}
+
+h2 {
+    font-size: 6vw;
+    color: rgb(255, 0, 0);
 }
 
 h3 {
     margin-top: 0;
-    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
     font-size: 4vw;
-    text-shadow: rgb(0, 0, 0) 2px 1px;
     color: rgb(237, 0, 0);
 }
 
@@ -30,10 +34,9 @@ h3 {
 SECTION 3: Paragraph Styles
 =================================================== */
 
-
 .p2 {
     font-family: 'Impact_Label_Reversed', Arial, sans-serif;
-    max-width: 70%; /* adjust this to your liking */
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     font-size:4vh;
@@ -42,26 +45,31 @@ SECTION 3: Paragraph Styles
     background-color:rgba(255, 255, 255, 0.792);
 }
 
-.p2 b{
+.p2 b {
     text-shadow: black 1px 1px;
     color:green;
 }
 
-.p2 a:hover{
+.p2 a:hover {
     color:rgb(255, 0, 0);
-    
 }
 
-.p2 a{
+.p2 a {
     color:rgb(0, 0, 0);
     text-decoration: none;
 }
 
 
-
 /* ===================================================
 SECTION 4: Video Player Styles
 =================================================== */
+#videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 video {
     width: 80vw;
     height: auto;
@@ -71,32 +79,7 @@ video {
     border-radius: 30%;
     border-bottom: 30%;
     margin-bottom: 0;
-  }
-  
-  #videoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  #playButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-  }
-  
-  #videoContainer:hover #playButton {
-    display: none;
-  }
-  
-  #playButton.show {
-    display: block;
-  }
+}
 
 
 /* ===================================================
@@ -107,61 +90,187 @@ SECTION 5: Container Styles
     flex-direction: column;
     align-items: center;
 }
-
-
 /* ===================================================
 SECTION 6: Carousel
 =================================================== */
+/* ===================================================
+SECTION 6: Carousel
+=================================================== */
+.owl-carousel {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
 
+.owl-carousel .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: -7px;
+}
+
+.owl-carousel,
+.owl-carousel .item {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.owl-carousel .item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.owl-carousel .item h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.owl-carousel .item h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    background-color:#fffafab8;
+}
+
+.owl-carousel .item p {
+    display:flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #000000a1;
+}
+
+.arrow-left img, .arrow-right img {
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow-left, .arrow-right {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;  /* increased z-index */
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 2%;
+}
+
+.arrow-right {
+    right: 2%;
+}
+
+.arrow-left img:hover, .arrow-right img:hover {
+    transform: scale(1.2);
+}
+
+/* Universal Item Image Size */
+.owl-carousel .item img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 
 /* ===================================================
 SECTION 7: Responsive Media Queries
 =================================================== */
-@media only screen and (max-width: 768px) {
-    video {
-        width: 100%;
-    }
+/* Responsive Media Queries */
 
-    p {
-        max-width: 90%; /* you might want to allow a bit more width on small screens */
-    }
-    
-    .owl-carousel .item {
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-    
-    .owl-carousel .item h2 {
-        font-size: 20px; /* Reduce font size for smaller screens */
-    }
-    
-    .owl-carousel .item h3 {
-        font-size: 16px; /* Reduce font size for smaller screens */
-    }
-    
-    .owl-carousel .item p {
-        font-size: 12px; /* Reduce font size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #videoPlayer {
-        width: 80%; /* Adjust as needed */
-        left: 10%; /* Half of the remaining 20% to center the video */
-    }
-}
-
+/* Small screens (up to 480px) */
 @media only screen and (max-width: 480px) {
+    video {
+      width: 100%;
+    }
+  
+    .p2 {
+      max-width: 90%;
+    }
+  
+    .container {
+      padding-top: 20px; /* Adjust the padding as needed */
+      align-items: flex-start; /* Align items to the top */
+    }
+  
+    .owl-carousel .item {
+      padding: 10px; /* Adjust the padding as needed */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+  
+    .owl-carousel .item h2 {
+      font-size: 20px;
+      color: black;
+      text-shadow: none;
+    }
+  
+    .owl-carousel .item h3 {
+      font-size: 16px;
+    }
+  
+    .owl-carousel .item p {
+      font-size: 12px;
+      color: red;
+      text-shadow: none;
+    }
+  
+    .arrow-left img,
+    .arrow-right img {
+      height: 10px;
+      width: 10px;
+      margin-bottom: 50%;
+    }
+  
     .owl-carousel .item img {
-        max-height: 150px; /* Reduce image height for smaller screens */
+      max-height: 120px; /* Adjust the max-height as needed */
+      width: auto;
+      object-fit: contain;
+        max-width: 100%;
+    max-height: 150px; /* Adjust the value as needed */
     }
-    
-    .owl-carousel .owl-nav .owl-prev,
-    .owl-carousel .owl-nav .owl-next {
-        font-size: 24px; /* Reduce font size for smaller screens */
-        padding: 8px 12px; /* Reduce padding for smaller screens */
+  }
+  
+  /* Medium screens (481px to 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Adjust the styles for medium-sized screens */
+  }
+  
+  /* Large screens (769px and above) */
+  @media only screen and (min-width: 769px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    
-    #carousel {
-        max-width: 90%; /* Reduce max-width for smaller screens */
+  
+    .owl-carousel {
+      max-width: 70%; /* Adjust this to whatever maximum width you desire */
+      margin: auto; /* Auto margins are used to center block elements */
+      max-height: 400px; /* Adjust this to your desired maximum height */
     }
-}
+  
+    .owl-carousel .item img {
+      max-height: 300px; /* Adjust the value as needed */
+    }
+  }

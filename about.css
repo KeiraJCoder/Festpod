@@ -69,11 +69,21 @@ body {
   text-align: center;
 }
 
+h2{
+  font-family: 'CfPunkForeverRegular', Arial, sans-serif;
+  font-size: 3vw;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
 .h22 {
   font-family: 'DragonForce', Arial, sans-serif;
   font-size: 6vw;
   text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 p {
@@ -88,6 +98,16 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+}
+
+.team-image2 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width:100%;
+  margin-bottom:-3%;
+  
 }
 
 
@@ -117,12 +137,14 @@ SECTION 4: Hosts Styles
 =================================================== */
 #hosts {
   text-align: center;
+
 }
 
 .host-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom:0;
 }
 
 .host {
@@ -133,8 +155,8 @@ SECTION 4: Hosts Styles
 }
 
 .host img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 50%;
   transition: transform 0.5s ease;
@@ -160,7 +182,7 @@ SECTION 4: Hosts Styles
   opacity: 0;
   transition: opacity 0.3s ease;
   position: absolute;
-  font-size: 2vh;
+  font-size: 2.1vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
