@@ -43,7 +43,7 @@ SECTION 2: Global Styles
 body {
   margin: 0;
   padding: 0;
-  background-image:url(/images/backg.jpg);
+  background-image:url(images/backg.jpg);
   background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
