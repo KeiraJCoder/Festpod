@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'DragonForce';
+  src: url('fonts/DragonForcE.ttf') format('truetype');
+}
+
+
 /* ===================================================
 SECTION 1: Global Styles
 =================================================== */
