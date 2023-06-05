@@ -64,14 +64,13 @@ body {
 body, html {
   overflow-x: hidden !important;
 }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Impact_Label_Reversed', Arial, sans-serif;
 }
-
-
 
 .h2 {
   font-family: 'DragonForce', Arial, sans-serif;
@@ -128,7 +127,7 @@ section h2 {
 #about b {
   font-weight: 500;
   color: rgb(209, 23, 23);
-  text-shadow: black 2px 1px;
+  text-shadow: black 1px;
 }
 
 #support {
