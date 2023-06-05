@@ -21,8 +21,11 @@ body {
 SECTION 2: Font Styles
 =================================================== */
 h2 {
-    font-size: 6vw;
-    color: rgb(255, 0, 0);
+    font-family: 'Impact_Label_Reversed', Arial, sans-serif;
+  font-size: 4vw;
+  text-shadow: rgb(0, 0, 0) 3px 1px;
+  color: rgb(242, 0, 0);
+  margin:0;
 }
 
 h3 {
