@@ -53,7 +53,7 @@ SECTION 3: Paragraph Styles
 }
 
 .p2 b {
-    text-shadow: black 1px 1px;
+    text-shadow: black 1px;
     color:green;
 }
 
