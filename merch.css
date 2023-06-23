@@ -4,16 +4,15 @@
 }
 
 
+
+
 /* ===================================================
 SECTION 1: Global Styles
 =================================================== */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
+
+body {
+
     margin: 0;
     padding: 0;
     background-image: url(images/music.jpg);
@@ -28,7 +27,7 @@ SECTION 2: Font Styles
 =================================================== */
 h2 {
     font-family: 'Impact_Label_Reversed', Arial, sans-serif;
-  font-size: 3vw;
+  font-size: 6vw;
   text-shadow: rgb(0, 0, 0) 3px 1px;
   color: rgb(242, 0, 0);
   margin:0;
@@ -36,7 +35,7 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: 3vw;
+    font-size: 4vw;
     color: rgb(237, 0, 0);
     display:flex;
     justify-content:center;
@@ -47,6 +46,10 @@ h2, h3 {
 
   text-align: center; /* Centers the text horizontally */
 
+}
+
+p{
+    font-size: auto;
 }
 /* ===================================================
 SECTION 3: Paragraph Styles
@@ -140,7 +143,7 @@ SECTION 7: Carousel
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #000000;
     z-index: 999;
     padding: 10px 15px 1px 15px;
 }
@@ -167,8 +170,12 @@ SECTION 7: Carousel
 }
 
 .owl-carousel .item h2 {
+    margin-top:5%;
     font-size: 20px;
     margin-bottom: 10px;
+    color:rgb(198, 0, 0);
+    background-color: rgb(222, 222, 222);
+
 }
 
 .owl-carousel .item p2 {
@@ -285,7 +292,7 @@ SECTION 8: Responsive Media Queries
 /* Medium screens (481px to 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     video {
-        width: 70%;
+        width: 60%;
     }
 
     .p2 {
